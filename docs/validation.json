@@ -1,0 +1,23 @@
+{
+  "contract_source_sha256": "bbc218f5e89eb1a5a5bdbf49b1ccf8b005cce347b98a63eb35cf0e4293fb424e",
+  "genvm_release": "v0.2.16",
+  "python_local": "3.12.14",
+  "genlayer_test": "0.29.2",
+  "genvm_linter": "0.11.0",
+  "pytest": "9.2.0",
+  "pyright": "1.1.408",
+  "direct_tests_passed": 56,
+  "external_io_in_direct_tests": "mocked AI; no live provider accuracy claim",
+  "checks": {
+    "lint": "PASS",
+    "sdk_validation": "PASS",
+    "abi_schema": "PASS",
+    "typecheck": "PASS"
+  },
+  "github_actions": {
+    "conclusion": "success",
+    "commit": "7a5465a6244de869ab5763c4c467d5888b412994",
+    "url": "https://github.com/ANZA24k/HandoverIQ/actions/runs/41775614950"
+  },
+  "deployed_source_payload_matches_local_file": true
+}

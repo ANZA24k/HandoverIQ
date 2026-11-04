@@ -12,6 +12,7 @@ Requires Python 3.12+.
 python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements-dev.txt
+export GENVM_VERSION=v0.2.16
 python -m pytest -q
 genvm-lint check contracts/handover_iq.py
 genvm-lint schema contracts/handover_iq.py --output /tmp/abi.json
@@ -52,3 +53,22 @@ The model supplies CLEAR, CONFLICT or UNCLEAR per document, never the final outc
 - Consensus disagreement rejects the proposed result and may leave the transaction undetermined with no state changes. An error receipt is appended only when nodes agree on assessment unavailability. Availability errors never produce VERIFIED.
 
 See [SECURITY.md](SECURITY.md), [EVIDENCE.md](EVIDENCE.md), [docs/abi.json](docs/abi.json) and [SUBMISSION.md](SUBMISSION.md).
+
+## GenLayer references
+
+- [Equivalence Principle and independent validators](https://docs.genlayer.com/developers/intelligent-contracts/equivalence-principle)
+- [SDK direct testing](https://docs.genlayer.com/api-references/genlayer-test/direct)
+- [GenVM linter and schema validation](https://docs.genlayer.com/api-references/genlayer-linter)
+- [Networks and RPCs](https://docs.genlayer.com/developers/networks)
+- [Deployment verification](https://docs.genlayer.com/developers/intelligent-contracts/deploying)
+
+## Verified live demonstration
+
+The synthetic three-party shipment on **Studionet (61999)** completed with **VERIFIED** from a real AI assessment. All **11 transactions finalized with successful execution**, using normal validator consensus (`leader_only=false`). The live assessment contains two CLEAR findings with verbatim source quotations. This demonstrates the complete happy path, not real-world shipment truth or a benchmark of all adverse cases.
+
+- [Live contract](https://explorer-studio.genlayer.com/address/0x67c12C61b4e0D8bA814b1BbF6038dcb42BbbA2f6)
+- [Evaluation transaction](https://explorer-studio.genlayer.com/tx/0x4cfdd2a69e734250c5ed2326e5596485804c0f45e60c5de659c8c20e67541116)
+- [Public deployment manifest](docs/deployment.json), [live state](docs/live-state.json), [assessment receipt](docs/live-receipts.json)
+- [Passing CI run](https://github.com/ANZA24k/HandoverIQ/actions/runs/41775614950) and [validation summary](docs/validation.json)
+
+Deployed source SHA-256: `bbc218f5e89eb1a5a5bdbf49b1ccf8b005cce347b98a63eb35cf0e4293fb424e`. The deployment payload was compared byte for byte with this repository's contract source.

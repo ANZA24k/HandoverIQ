@@ -1,0 +1,31 @@
+[
+  {
+    "assessment": {
+      "assessment": {
+        "findings": [
+          {
+            "document_id": "b797e2fa89ddad2fead7fc2f0145d4c0d5aab341f83c13d9f9dd1281690b6cd6",
+            "finding": "CLEAR",
+            "quote": "Shipment HIQ-DEMO-20261104: on route leg 0, 100 sealed cartons were transferred and received intact and dry. Seal S-0042 matched; no damage, shortage or reservations."
+          },
+          {
+            "document_id": "b2140f1df225794cac264178148abe2cb4c69f9ec44f43148ca3db233308be84",
+            "finding": "CLEAR",
+            "quote": "Shipment HIQ-DEMO-20261104: on route leg 1, 100 sealed cartons were transferred and received intact and dry. Seal S-0042 matched; no damage, shortage or reservations."
+          }
+        ]
+      },
+      "ok": true
+    },
+    "attempt": 1,
+    "decision": {
+      "outcome": "VERIFIED",
+      "reasons": []
+    },
+    "decision_hash": "47da2b770b34985c0507dd646640dc19d08520abe5746e5c1c2dedc34fa01534",
+    "input_hash": "e6a3c8b11428f61d0e0cb90614166ac61029466e4ccf4e766b223a325b744fc6",
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "receipt_hash": "4a685a61f408fcb10e9a2949312eee200b361761ac57d1ee0f622165a8d6cd5c",
+    "version": "handoveriq/1"
+  }
+]

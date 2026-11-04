@@ -45,7 +45,7 @@ if not manifest['contract_address']:
   raw=client.provider.make_request('eth_getTransactionByHash',[manifest['transactions'][0]['hash']]).get('result')
   if raw and raw.get('to_address'):
    manifest['contract_address']=raw['to_address']
-   manifest['contract_url']='https://explorer-studio.genlayer.com/contracts/'+raw['to_address']
+   manifest['contract_url']='https://explorer-studio.genlayer.com/address/'+raw['to_address']
    manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
    break
   time.sleep(2)

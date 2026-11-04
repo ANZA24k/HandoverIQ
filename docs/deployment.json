@@ -1,0 +1,408 @@
+{
+  "network": "Studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "contract_address": "0x67c12C61b4e0D8bA814b1BbF6038dcb42BbbA2f6",
+  "contract_url": "https://explorer-studio.genlayer.com/address/0x67c12C61b4e0D8bA814b1BbF6038dcb42BbbA2f6",
+  "source_sha256": "bbc218f5e89eb1a5a5bdbf49b1ccf8b005cce347b98a63eb35cf0e4293fb424e",
+  "synthetic": true,
+  "leader_only": false,
+  "transactions": [
+    {
+      "step": "deploy",
+      "hash": "0x0dae2c79629ac52986da6bdca769ca5062ab1f5459ca6237ef8fb59e4c4c5c94",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "warehouse_accepts",
+      "hash": "0xccb2126aaf97c6b4cc47fd6b0f708dbd730c936cb9abdce973e97262905382ae",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "customer_accepts",
+      "hash": "0x5d484ed9fca0d1766a5359995c3ea8693937615d265f60ae33c915cf9370102f",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "submit_leg_0",
+      "hash": "0x2f4177a733bfbd7cb8447c3387210d86868207f5325d109a82549e1f0731b915",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "countersign_leg_0",
+      "hash": "0xcdbf0e9b5584805aae079becd8d9669679f989cedd037a335984575a2900467a",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "submit_leg_1",
+      "hash": "0xc5e293cd8cf87aec821be8e8dfb66dd0cb5b4960f2d115d8289945cf1f08ee31",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "countersign_leg_1",
+      "hash": "0x83c5cca63495dfb0dbce54f85febd27a5d0b0301ca05083a909b3a0f1eb7961a",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "close_0",
+      "hash": "0x1ba6306e20b3e615b41adb570fc8db0f4dcaebd9671a2886c98946b922b6f228",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "close_1",
+      "hash": "0x4cfef0b838eca7424981196e934dfed5d4fb7bb446c2adbe8209e47bde418a1c",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "close_2",
+      "hash": "0x1273d94e963522b92d5e599478d85ea8215dcd7b4d84796108050b6806f9574a",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    },
+    {
+      "step": "evaluate",
+      "hash": "0x4cfdd2a69e734250c5ed2326e5596485804c0f45e60c5de659c8c20e67541116",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "execution": [
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "genvm_result": {
+            "stderr": "",
+            "stdout": "",
+            "raw_error": null,
+            "error_code": null,
+            "error_description": null
+          }
+        }
+      ]
+    }
+  ],
+  "outcome": "VERIFIED",
+  "demo_wallets": [
+    "0x73d6Cb5028a5484eE48178b87f51625372125a7F",
+    "0x9Ed0EfE51632d0372241fA0d8C97B7317854D52b",
+    "0x961eF03b5A7AfEDA06448C7Adc37b3e27e3B5d11"
+  ],
+  "source_commit": "7a5465a6244de869ab5763c4c467d5888b412994",
+  "source_verified_against_deployment_payload": true,
+  "transaction_count": 11,
+  "live_assessment_success": true,
+  "assessment_receipt_hash": "4a685a61f408fcb10e9a2949312eee200b361761ac57d1ee0f622165a8d6cd5c"
+}
