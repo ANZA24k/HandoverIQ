@@ -1,0 +1,11 @@
+{
+  "shipment_id": "HIQ-DEMO-20261104",
+  "quantity": 100,
+  "unit": "sealed cartons",
+  "route": [
+    "0x73d6cb5028a5484ee48178b87f51625372125a7f",
+    "0x9ed0efe51632d0372241fa0d8c97b7317854d52b",
+    "0x961ef03b5a7afeda06448c7adc37b3e27e3b5d11"
+  ],
+  "requirements": "All 100 sealed cartons must arrive intact, dry and with matching seal S-0042."
+}
