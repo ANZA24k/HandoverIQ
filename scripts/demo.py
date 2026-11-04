@@ -17,7 +17,7 @@ def run(scenario):
              'requirements': 'All 100 sealed cartons must arrive intact, dry and with matching seal S-0042.'}
     vm.sender = wallets[0]
     with vm.activate():
-        contract = deploy_contract(ROOT / 'contracts/handover_iq.py', vm, canon(terms))
+        contract = deploy_contract(ROOT / 'contracts/handover_iq.py', vm, canon(terms), sdk_version="v0.2.16")
         env = (vm, contract, wallets, terms)
         for wallet in wallets:
             vm.sender = wallet

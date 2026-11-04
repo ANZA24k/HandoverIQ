@@ -29,7 +29,7 @@ def env():
              'requirements': 'All 100 sealed cartons must arrive intact, dry and with matching seal S-0042.'}
     vm.sender = wallets[0]
     with vm.activate():
-        c = deploy_contract(CONTRACT, vm, canon(terms))
+        c = deploy_contract(CONTRACT, vm, canon(terms), sdk_version="v0.2.16")
         for w in wallets[:3]:
             vm.sender = w
             c.accept_terms(json.loads(c.get_terms())['terms_hash'])
@@ -288,7 +288,7 @@ def test_invalid_terms(changes):
     terms = {'shipment_id':'X', 'quantity':100, 'unit':'cartons', 'requirements':'All cartons must arrive intact.', 'route':[addr(a),addr(b)]}
     terms.update(changes)
     with vm.activate(), pytest.raises(Exception):
-        deploy_contract(CONTRACT, vm, canon(terms))
+        deploy_contract(CONTRACT, vm, canon(terms), sdk_version="v0.2.16")
 
 
 def test_requires_every_partys_acceptance():
@@ -297,7 +297,7 @@ def test_requires_every_partys_acceptance():
     vm.sender = a
     terms = {'shipment_id':'SHIP-2026-0042', 'quantity':100, 'unit':'cartons', 'requirements':'All cartons must arrive intact.', 'route':[addr(a),addr(b)]}
     with vm.activate():
-        c = deploy_contract(CONTRACT, vm, canon(terms))
+        c = deploy_contract(CONTRACT, vm, canon(terms), sdk_version="v0.2.16")
         with pytest.raises(Exception, match='accept terms'):
             c.submit_evidence(canon(document()))
         with pytest.raises(Exception, match='accept terms'):
@@ -342,7 +342,7 @@ def test_global_document_limit():
              'route': [addr(w) for w in ws], 'requirements': 'All cartons must arrive intact and dry.'}
     vm.sender = ws[0]
     with vm.activate():
-        c = deploy_contract(CONTRACT, vm, canon(terms))
+        c = deploy_contract(CONTRACT, vm, canon(terms), sdk_version="v0.2.16")
         for w in ws:
             vm.sender = w
             c.accept_terms(json.loads(c.get_terms())['terms_hash'])

@@ -1,5 +1,7 @@
 name: Contract validation
 on: [push, pull_request, workflow_dispatch]
+env:
+  GENVM_VERSION: v0.2.16
 permissions:
   contents: read
 jobs:
